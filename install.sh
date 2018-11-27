@@ -35,7 +35,7 @@ if [ "$1" = "install" ]; then
     wget https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
     bash Anaconda3-5.3.1-Linux-x86_64.sh
     sudo echo export PATH=$PATH:~/anaconda3/bin >> ~/.bashrc
-    sudo echo export PATH=$PATH:~/anaconda3/bin >> ~/.zshrc
+    source ~/.bashrc
     conda config --add channels 'https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/'
     conda config --set show_channel_urls yes
     conda create -n yl python=3.5
