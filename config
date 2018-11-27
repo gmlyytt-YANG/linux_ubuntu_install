@@ -1,0 +1,11 @@
+1. pip 
+  sudo vim ~/.pip/pip.conf
+  add the content:
+  [global]
+  index-url = https://pypi.tuna.tsinghua.edu.cn/simple/
+
+2. 中文输入法
+  sudo apt-get install fcitx-table-wbpy
+  打开language support, 记得把汉语(中国)拖到第一个位置，然后更改fcitx为默认选项
+  重启电脑
+  参考链接: https://blog.csdn.net/qiupu4667/article/details/70215890
